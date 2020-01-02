@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<package name="default" extends="struts-default">
+
+
+
+		<action name="addpost1" class="com.kclink.krp.action.StoreAction"
+			method="execute">
+			<result name="success">NewFile.jsp</result>
+
+		</action>
+
+		<!-- <action name="retrive" class="com.kclink.krp.action.RetriveAction"
+			method="execute">
+			<result name="success">NewFile.html</result>
+			<result name="input">index.jsp</result>
+		</action> -->
+
+
+		<action name="retrive" class="com.kclink.krp.action.RetriveAction"
+			method="execute">
+			<result name="success">NewFile.html</result>
+
+		</action>
+	</package>
+</struts>  
