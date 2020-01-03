@@ -1,0 +1,25 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+    <field name="cardname"> 
+        <field-validator type="requiredstring">
+        	<message>Card Name is required.</message>
+        </field-validator>
+    </field>
+    <!-- <field name="cardnum">
+        <field-validator type="fieldexpression">
+        <param name="expression"><![CDATA[cardnum.length > 16]]></param>
+        	<message>enter valid card number</message>       
+         </field-validator>        	
+    </field> -->
+    <!-- <validator type="regex">
+    <param name="cardnum">
+    <param name="regex"><![CDATA[\d{3}-\d{3}-\d{4}]]></param>
+    <message>Phone number must be entered as 999-999-9999.</message>
+</validator>
+<validator type="fieldexpression">
+    <param name="fieldname">personBean.carModels</param>
+    <param name="expression"><![CDATA[personBean.carModels.length > 0]]></param>
+    <message>You must select at least one car model.</message>
+</validator> -->
+    
+</validators> 
